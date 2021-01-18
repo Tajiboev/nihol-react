@@ -1,0 +1,19 @@
+@import '_vars'
+
+.plyr__poster
+    background-size: cover
+
+.plyr--video
+    width: 100%
+
+.plyr__control--overlaid
+    background: $accent
+    background: var(--plyr-video-control-background-hover,var(--plyr-color-main,var(--plyr-color-main, $accent)))
+
+.plyr--video .plyr__control:hover
+    background: $accent
+    background: var(--plyr-video-control-background-hover,var(--plyr-color-main,var(--plyr-color-main, $accent)))
+
+.plyr--full-ui input[type=range]
+    color: $accent
+    color: var(--plyr-range-fill-background,var(--plyr-color-main,var(--plyr-color-main,$accent)))

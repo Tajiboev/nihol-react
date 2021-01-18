@@ -1,0 +1,27 @@
+@import '_vars'
+
+.subleading-text
+    margin-bottom: 1rem
+    text-align: center
+    line-height: 1.6
+
+.feature-grid
+    padding-top: 1rem
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    gap: 1rem
+
+.feature
+    padding: 1.5rem 1rem
+    background-color: $primary-tint
+    border: 1px solid $accent
+    border-radius: 2px
+    text-align: center
+    cursor: pointer
+    &:hover
+        box-shadow: 0 0 10px rgba(0,0,0,.15)
+    .feature-title
+        padding-bottom: 1rem
+        color: $accent
+    .feature-text
+        line-height: 1.4
