@@ -6,6 +6,7 @@
 .navbar-wrap
     display: flex
     align-items: center
+    justify-content: space-between
 
 .logo-wrap
     display: flex
@@ -14,7 +15,6 @@
         max-width: 200px
 
 .navigation
-    flex: 1
     .nav-list
         width: 100%
         display: flex
@@ -30,4 +30,66 @@
         color: $accent
         transition: all 0.15s ease-in-out
         &:hover
-            background-color: $primary-tint
+            background-color: $tint
+
+.lang-select-li
+    position: relative
+    .lang-wrap
+        position: absolute
+        top: 110%
+        background-color: #fff
+        padding: 1em
+        z-index: 200
+        box-shadow: 0 0 5px rgba(0,0,0,0.1)
+    .lang-select-btn
+        background-color: transparent
+        border: none
+        outline: none
+        font-size: 1rem
+        cursor: pointer
+    .lang
+        padding: 0.5rem
+        margin: 2px 0
+        cursor: pointer
+        &:hover
+            color: $accent
+            background-color: $tint
+    .lang-active
+        color: $accent
+        background-color: $tint
+
+.toggler-wrap
+    display: none
+
+@media (max-width: 992px)
+    .navbar-wrap
+        position: relative
+
+    .logo-wrap
+        img
+            max-width: 150px
+    .navigation
+        position: absolute
+        background: #fff
+        top: calc(100% + 1rem)
+        left: 0
+        width: 100%
+        padding: 1rem
+        border-top: 1px solid $accent
+        .nav-list
+            flex-direction: column
+
+    .toggler-wrap
+        display: flex
+        .toggler
+            background-color: #fff
+            outline: none
+            border: none
+            margin-top: 4px
+            img
+                max-width: 32px
+
+@media (max-width: 768px)
+    .logo-wrap
+        img
+            max-width: 120px

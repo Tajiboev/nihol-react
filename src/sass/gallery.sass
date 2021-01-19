@@ -12,3 +12,13 @@
     width: 100%
     img
         max-width: 100%
+
+@media (max-width: 992px)
+    .gallery-wrap
+        grid-template-columns: repeat(2, 1fr)
+        gap: 1rem
+
+@media (max-width: 768px)
+    .gallery-wrap
+        grid-template-columns: repeat(1, 1fr)
+        gap: 1rem

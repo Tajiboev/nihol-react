@@ -5,14 +5,14 @@ import '../sass/about.sass'
 import Section from './Section';
 import Icon from './Icon';
 
-import addressIcon from '../images/noun_address.svg'
-import timeIcon from '../images/noun_time.svg'
-import telephoneIcon from '../images/noun_telephone.svg'
+import addressIcon from '../images/icons/noun_address.svg'
+import timeIcon from '../images/icons/noun_time.svg'
+import telephoneIcon from '../images/icons/noun_telephone.svg'
 
 
 const About = () => {
     return (
-        <Section name="about" title="Sihatgoh haqida" subtitle='"Nihol salomatlik sihatgohi" MChJ - Zamolnaviy laborator va tibbiy-diagnostik asbob uskunalar bilan jihozlangan, yevropa tipidagi sihatgohdir'>
+        <Section id="about" name="about" title="Sihatgoh haqida" subtitle='"Nihol salomatlik sihatgohi" MChJ - Zamolnaviy laborator va tibbiy-diagnostik asbob uskunalar bilan jihozlangan, yevropa tipidagi sihatgohdir'>
             <div className="about-grid">
                 <div className="about-left">
                     <p className='about-text'>
@@ -61,7 +61,7 @@ const About = () => {
                 <div className='info-wrap'>
                     <p className='info-name'><span><Icon source={timeIcon} name={'Time'} /></span>Ish vaqti</p>
                     <p>Dushanba - Juma</p>
-                    <p>9:00 dan 17:00 gacha</p>
+                    <p><time>9:00</time>  dan <time>17:00</time>  gacha</p>
                 </div>
             </div>
         </Section>

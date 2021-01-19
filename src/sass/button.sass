@@ -2,17 +2,20 @@
 
 .btn
     font-size: 1rem
+    font-family: $headingFont
     outline: none
     border: 1px solid #000
-    color: #000
+    color: $text
     background-color: transparent
     border-radius: 2px
     padding: 0.75rem 1.75rem
     cursor: pointer
     transition: all 0.15s ease-in-out
-    margin-right: 1rem
     &:hover
+        background-color: $muted
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.015)
+    &:active
+        background-color: #dfdfdf
 
 .btn-primary
     color: #fff
@@ -21,15 +24,15 @@
     &:hover
         background-color: $accent
     &:active
-        background-color: $accent-2
+        background-color: $accentDarker
 
 .btn-secondary
     color: $primary
     border-color: $primary
-    background-color: $primary-tint
+    background-color: $tint
     &:hover
         color: #fff
         background-color: $primary
     &:active
         color: #fff
-        background-color: $accent-2
+        background-color: $accentDarker

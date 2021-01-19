@@ -5,19 +5,19 @@ import Section from './Section';
 import Icon from './Icon';
 
 // icons
-import abdominal_pain from '../images/noun_pain.svg'
-import spinal_pain from '../images/noun_pain_2.svg'
-import migraine from '../images/noun_migraine.svg'
-import woman from '../images/noun_women.svg'
-import man from '../images/noun_male.svg'
-import heart from '../images/noun_heart.svg'
-import kidney from '../images/noun_kidney.svg'
-import blood from '../images/noun_normal_blood.svg'
+import abdominal_pain from '../images/icons/noun_pain.svg'
+import spinal_pain from '../images/icons/noun_pain_2.svg'
+import migraine from '../images/icons/noun_migraine.svg'
+import woman from '../images/icons/noun_women.svg'
+import man from '../images/icons/noun_male.svg'
+import heart from '../images/icons/noun_heart.svg'
+import kidney from '../images/icons/noun_kidney.svg'
+import blood from '../images/icons/noun_normal_blood.svg'
 
 
 const Features = () => {
     return (
-        <Section name="features" title="Davolanish" subtitle="Sihatgohimizda quyidagi kasalliklar bo'yicha yuqori sifatli kompleks davolash hizmatlari taklif qilinadi">
+        <Section id="features" name="features" title="Davolanish" subtitle="Sihatgohimizda quyidagi kasalliklar bo'yicha yuqori sifatli kompleks davolash hizmatlari taklif qilinadi">
             <div className="feature-grid">
                 <div className="feature">
                     <div className="icon-wrap">

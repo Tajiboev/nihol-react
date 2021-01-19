@@ -8,23 +8,36 @@
 
 html
   font-size: 16px
+  scroll-behavior: smooth
 
 body
   margin: 0
-  font-family: -apple-system, BlinkMacSystemFont, "TT Norms", "Roboto", sans-serif
+  font-family: "TT Norms", "Roboto", sans-serif
+  color: $text
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
 h1, h2, h3
-  font-family: 'Ranua', sans-serif
+  font-family: $headingFont
+  color: $text
 
 li
   list-style-type: none
 
 a
   text-decoration: none
-  color: #000
+  color: $text
+
+button
+  font-family: "TT Norms", "Roboto", sans-serif
 
 ::selection
   color: #fff
   background: $primary
+
+.Toastify .Toastify__toast--success
+  background: $accent
+
+.Toastify__toast-body
+  padding-left: 1rem
+  font-family: $headingFont

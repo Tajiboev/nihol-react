@@ -10,7 +10,7 @@ const Video = (props) => {
 
     
     return (
-        <video id="player" playsinline controls data-poster={poster}>
+        <video id="player" playsInline controls data-poster={poster}>
             {(sources.map(source => {
                 return (
                     <source key={source.path} src={source.path} type={source.type} />
