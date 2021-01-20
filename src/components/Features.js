@@ -17,7 +17,7 @@ import blood from '../images/icons/noun_normal_blood.svg'
 
 const Features = () => {
     return (
-        <Section id="features" name="features" title="Davolanish" subtitle="Sihatgohimizda quyidagi kasalliklar bo'yicha yuqori sifatli kompleks davolash hizmatlari taklif qilinadi">
+        <Section id="features" className="features" title="Davolanish" subtitle="Sihatgohimizda quyidagi kasalliklar bo'yicha yuqori sifatli kompleks davolash hizmatlari taklif qilinadi">
             <div className="feature-grid">
                 <div className="feature">
                     <div className="icon-wrap">

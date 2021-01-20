@@ -10,7 +10,7 @@ import poster from '../images/medium/nihol-2-m.webp';
 const Hero = () => {
 
     return (
-        <Section name="hero">
+        <Section className="hero">
             <div className="hero-left">
                 <h1 className="leading-text">Nihol salomatlik sihatgohi - sog'lom hayot makoni!</h1>
                 <p className="sub-text">"Nihol" salomatlik sihatgohi Uchqorgon tumanining baxavo hududida joylashgan, vodiyning haqiqiy marvarid maskanidir.</p>

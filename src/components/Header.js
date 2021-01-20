@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState } from 'react'
 import '../sass/header.sass'
 
 import Container from './Container'
@@ -9,23 +9,8 @@ import cancel from '../images/icons/cancel.svg'
 import Logo from '../images/nihol-logo-small.png'
 
 const Header = () => {
-    const [showLangDropdown, setShowLangDropdown] = useState(false)
     const [showMenu, setShowMenu] = useState(false)
-    const dropdownRef = useRef()
-    const liRef = useRef()
-
-    useEffect(() => {
-        document.addEventListener("mousedown", handleClickOutside);
-        return () => {
-            document.removeEventListener("mousedown", handleClickOutside);
-        };
-    }, []);
-
-    const handleClickOutside = (event) => {
-        if (dropdownRef.current && !liRef.current.contains(event.target)) {
-            setShowLangDropdown(false)
-        }
-    }
+    const [locale, setLocale] = useState('uz')
 
     return (
         <header className='header'>
@@ -34,7 +19,7 @@ const Header = () => {
                     <div className='logo-wrap'>
                         <img src={Logo} alt="Nihol Salomatlik Sihatgohi"/>
                     </div>
-                    {showMenu && <nav className="navigation">
+                    <nav className={showMenu ? 'navigation' : 'navigation navigation-hidden'}>
                         <ul className='nav-list'>
                             <li className='nav-item'>
                                 <a href="#about" className='nav-link'>Sihatgoh haqida</a>
@@ -48,17 +33,14 @@ const Header = () => {
                             <li className='nav-item'>
                                 <a href="#contact" className='nav-link'>Biz bilan bog'lanish</a>
                             </li>
-                            <li className='nav-item lang-select-li' ref={liRef}>
-                                <button className='nav-link lang-select-btn' onClick={() => setShowLangDropdown(prev => !prev)}>O'zbekcha</button>
-                                { showLangDropdown && <div className='lang-wrap' ref={dropdownRef}>
-                                    <ul>
-                                        <li className='lang lang-active'>O'zbekcha</li>
-                                        <li className='lang'>Русский</li>
-                                    </ul>
-                                </div>}
+                            <li className='nav-item'>
+                                <button className={locale === 'uz' ? 'lang-btn lang-btn-active' : 'lang-btn'}>O'zbekcha</button>
+                            </li>
+                            <li className='nav-item'>
+                                <button className={locale === 'ru' ? 'lang-btn lang-btn-active' : 'lang-btn'}>Русский</button>
                             </li>
                         </ul>
-                    </nav>}
+                    </nav>
                     <div className="toggler-wrap">
                         <button className="toggler" onClick={() => setShowMenu(prev => !prev)}>
                             <Icon source={showMenu ? cancel : hamburger}/>

@@ -12,7 +12,7 @@ import telephoneIcon from '../images/icons/noun_telephone.svg'
 
 const About = () => {
     return (
-        <Section id="about" name="about" title="Sihatgoh haqida" subtitle='"Nihol salomatlik sihatgohi" MChJ - Zamolnaviy laborator va tibbiy-diagnostik asbob uskunalar bilan jihozlangan, yevropa tipidagi sihatgohdir'>
+        <Section id="about" className="about" title="Sihatgoh haqida" subtitle='"Nihol salomatlik sihatgohi" MChJ - Zamolnaviy laborator va tibbiy-diagnostik asbob uskunalar bilan jihozlangan, yevropa tipidagi sihatgohdir'>
             <div className="about-grid">
                 <div className="about-left">
                     <p className='about-text'>

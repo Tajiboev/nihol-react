@@ -26,7 +26,7 @@ const Contact = () => {
     }
 
     return (
-        <Section id="contact" name="contact" title="Biz bilan bog'laning!" subtitle="Murojat, taklif va fikrlar uchun" >
+        <Section id="contact" className="contact" title="Biz bilan bog'laning!" subtitle="Murojat, taklif va fikrlar uchun" >
             <div className="contact-grid">
                 <div className="form-wrap">
                     <form onSubmit={handleSubmit} spellCheck="false">

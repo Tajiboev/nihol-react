@@ -2,6 +2,7 @@
 
 .header
     padding: 1rem 0
+    position: relative
 
 .navbar-wrap
     display: flex
@@ -29,55 +30,47 @@
         padding: 0.75rem
         color: $accent
         transition: all 0.15s ease-in-out
+        border-radius: 2px
         &:hover
             background-color: $tint
-
-.lang-select-li
-    position: relative
-    .lang-wrap
-        position: absolute
-        top: 110%
-        background-color: #fff
-        padding: 1em
-        z-index: 200
-        box-shadow: 0 0 5px rgba(0,0,0,0.1)
-    .lang-select-btn
+    .lang-btn
+        outline: none
         background-color: transparent
         border: none
-        outline: none
+        cursor: pointer
+        padding: 0.75rem
+        font-family: $defaultFont
         font-size: 1rem
-        cursor: pointer
-    .lang
-        padding: 0.5rem
-        margin: 2px 0
-        cursor: pointer
-        &:hover
-            color: $accent
-            background-color: $tint
-    .lang-active
         color: $accent
+        border-radius: 2px
+        &:hover
+            background-color: $tint
+        &:active
+            background-color: $tint
+    .lang-btn-active
         background-color: $tint
 
 .toggler-wrap
     display: none
 
 @media (max-width: 992px)
-    .navbar-wrap
-        position: relative
-
     .logo-wrap
         img
             max-width: 150px
     .navigation
         position: absolute
         background: #fff
-        top: calc(100% + 1rem)
-        left: 0
+        top: 100%
         width: 100%
+        left: 0
         padding: 1rem
         border-top: 1px solid $accent
+        transition: all 0.25s ease-in-out
         .nav-list
             flex-direction: column
+
+    .navigation-hidden
+        transform: translate(-100%)
 
     .toggler-wrap
         display: flex

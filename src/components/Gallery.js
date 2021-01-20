@@ -53,7 +53,7 @@ const Gallery = () => {
 
 
     return (
-        <Section id="gallery" name="gallery" title="Foto gallereya" subtitle="Sihatgohimizdan fotolavxalar">
+        <Section id="gallery" className="gallery" title="Foto gallereya" subtitle="Sihatgohimizdan fotolavxalar">
             {
                 largeArray.map((image, index) => {
                     return (

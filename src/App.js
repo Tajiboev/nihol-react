@@ -1,8 +1,8 @@
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, useState } from 'react';
 import { ToastContainer, Slide } from 'react-toastify';
+import LocaleContext from './contexts/LocaleContext'
 
 import Hero from './components/Hero';
-import Fallback from './components/Fallback'
 
 const Header = lazy(()=> import('./components/Header'));
 const About = lazy(()=> import('./components/About'));
@@ -12,31 +12,30 @@ const Contact = lazy(()=> import('./components/Contact'));
 const Footer = lazy(()=> import('./components/Footer'));
 
 const App = () => {
+  const [locale, setLocale] = useState('uz')
 
   return (
     <div className="App">
-      <Suspense fallback={<div style={{height: '80px', width: '100%', backgroundColor: '#fafafa'}}></div>}>
-        <Header />
-      </Suspense>
+      <LocaleContext.Provider value={locale}>
+        <Suspense fallback={<p>Loading...</p>}>
+          <Header />
+        </Suspense>
       
-      <main className="main">
-        <Hero></Hero>
-        <Suspense fallback={<Fallback />}>
-          <About />
-        </Suspense>
-        <Suspense fallback={<Fallback />}>
-          <Features />
-        </Suspense>
-        <Suspense fallback={<Fallback />}>
-          <Gallery />
-        </Suspense>
-        <Suspense fallback={<Fallback />}>
-          <Contact />
-        </Suspense>
-        <Suspense fallback={<Fallback />}>
+        <main className="main">
+            <Hero></Hero>           
+            <Suspense fallback={<p>Loading...</p>}>
+              <About />     
+              <Features /> 
+              <Gallery />
+              <Contact /> 
+            </Suspense>  
+        </main>
+
+        <Suspense fallback={<p>Loading...</p>}>
           <Footer />
-        </Suspense>
-        <ToastContainer
+        </Suspense> 
+      </LocaleContext.Provider>
+      <ToastContainer
           position="top-center"
           autoClose={2500}
           hideProgressBar
@@ -48,7 +47,6 @@ const App = () => {
           pauseOnHover
           transition={Slide}
         />
-      </main>
     </div>
   );
 }
