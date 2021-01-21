@@ -43,12 +43,17 @@
         font-size: 1rem
         color: $accent
         border-radius: 2px
-        &:hover
-            background-color: $tint
-        &:active
-            background-color: $tint
-    .lang-btn-active
-        background-color: $tint
+        display: flex
+        align-items: center
+        .flag
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-right: 4px
+            img
+                width: 24px
+                border: thin solid $accent
+                border-radius: 2px
 
 .toggler-wrap
     display: none

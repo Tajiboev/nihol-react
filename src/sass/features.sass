@@ -24,16 +24,18 @@
         padding-bottom: 1rem
         color: $accent
     .feature-text
-        line-height: 1.4
+        line-height: 1.6
+
+@media (max-width: 1200px)
+    .feature-grid
+        grid-template-columns: repeat(3, 1fr)
 
 @media (max-width: 992px)
     .feature-grid
         grid-template-columns: repeat(2, 1fr)
-        gap: 1rem
 
-@media (max-width: 768px)
+@media (max-width: 500px)
     .feature-grid
         grid-template-columns: repeat(1, 1fr)
-        gap: 1rem
 
 // @media (max-width: 460px)

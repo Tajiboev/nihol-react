@@ -18,6 +18,7 @@
         margin-bottom: 1.5rem
         font-size: 2rem
         color: $primary
+        line-height: 1.1
     .sub-text
         line-height: 1.6
     .offer-list
@@ -25,11 +26,13 @@
         padding: 0 2rem
     .offer-item
         padding: 0.25rem 0
-        list-style-type: disc
+        line-height: 1.6
+        &::marker
+            content: "✓    "
     .cta
         margin-top: 1.5rem
-        .btn-secondary
-            margin-left: 0.75rem
+        .btn-primary
+            margin-right: 0.75rem
 
 .hero-right
     display: flex
@@ -39,10 +42,11 @@
 @media (max-width: 992px)
     .hero-wrap
         grid-template-columns: repeat(1, 1fr)
+    .hero-left
+        padding: 0.5rem 0 1rem 0
 
-@media (max-width: 340px)
+@media (max-width: 395px)
     .hero-left
         .cta
-            .btn-secondary
-                margin-left: 0
-                margin-top: 0.75rem
+            .btn-primary
+                margin-bottom: 0.5rem

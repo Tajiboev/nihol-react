@@ -18,19 +18,20 @@
     .info-wrap
         display: flex
         flex-direction: column
-        align-items: center
         line-height: 1.6
         padding: 1rem
+        align-items: center
     .info-name
         display: flex
         font-weight: 500
-        line-height: 2rem
+        line-height: 2
         span
             margin-right: 1rem
             img
                 max-width: 2rem
     address
         font-style: normal
+        text-align: center
 
 @media (max-width: 768px)
     .about-grid
@@ -38,15 +39,16 @@
         gap: 0
     .about-info
         grid-template-columns: repeat(2, 1fr)
+        .info-wrap
+            align-items: flex-start
+            padding: 1rem 0
+        address
+            text-align: left
 
 @media (max-width: 460px)
     .about-info
         grid-template-columns: repeat(1, 1fr)
         .info-wrap
-            display: flex
-            flex-direction: column
-            line-height: 1.6
-            padding: 1rem 0
             align-items: flex-start
         .info-name
             display: flex

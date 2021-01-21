@@ -44,9 +44,6 @@ const Contact = () => {
                         <button className="btn btn-primary" type="submit">{contact.submit}</button>
                     </form>
                 </div>
-                <div className="map-wrap">
-                    <div className="map"></div>
-                </div>
             </div>
         </Section>
     )
