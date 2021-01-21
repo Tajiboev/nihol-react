@@ -1,0 +1,178 @@
+{
+    "uz": {
+        "navigation": {
+            "logo_alt": "Nihol Salomatlik Sihatgohi",
+            "link_1": "Sihatgoh haqida",
+            "link_2": "Davolanish",
+            "link_3": "Foto gallereya",
+            "link_4": "Biz bilan bog'lanish",
+            "changeLangTo": "Русский"
+        },
+        "hero": {
+            "h1_leading": "Nihol salomatlik sihatgohi - sog'lom hayot makoni!",
+            "p_sub": "\"Nihol\" salomatlik sihatgohi Uchqorgon tumanining baxavo hududida joylashgan, vodiyning haqiqiy marvarid maskanidir.",
+            "li_offer_item_1": "So'lim tabiyat",
+            "li_offer_item_2": "xush muomila hodimlar",
+            "li_offer_item_3": "sifatli hizmat",
+            "li_offer_item_4": "totli taomlar",
+            "li_offer_item_5": "maroqli hordiq",
+            "li_offer_item_6": "2250 metr qaridanotilib chiquvchi shifobaxsh madanli suv",
+            "p_sub_2": "Bularning bari \"Nihol\" salomatlik sihatgohida.",
+            "cta_primary": "Batafsil ma'lumot",
+            "cta_secondary": "Bog'lanish"
+        },
+        "about": {
+            "title": "Sihatgoh haqida",
+            "subtitle": "\"Nihol salomatlik sihatgohi\" MChJ - Zamolnaviy laborator va tibbiy-diagnostik asbob uskunalar bilan jihozlangan, yevropa tipidagi sihatgohdir",
+            "p_about_text_1": "Sihatgoh Namangan shaxridan 40km masofada, Tyan-shan tizmalaridan oqib keluvchi Norin daryosi va Katta Fargo'ona kanali yoqasida joylashgan. Sihatgohdagi har bir dam oluvchiga yuqori sifatli kompleks davolash hizmatlari taklif qilinadi va qulay va foydali dam olish va davolanish uchun barcha sharoitlar muhayyo qilinadi.",
+            "p_about_text_2": "Sihatgoh hududida 2245 metr qaridan oqib chiquvchi termal buloq joylashgan bolib, uning odam organizmiga foydali bolgan mikroelementlar, yod-brom va boshqa elementlarga boy bolgan madanli suvi davolash vannalari va balchiq bilan davolash jarayonlarida ishlatiladi. Tabiiy davolash vositalaridan tashqari sihatgohda zamonaviy fizioterapiya, psixoterapiya, fitoterapiya, dietologiya, igna sanchish, LFK va massaj, hamda, turli travmatik va nevrologik kasalliklarni boshdan kechirgan bemorlarning reabilitatsiyasi o'tkaziladi.",
+            "p_about_text_3": "Sihatgohda yurak-qon tomir, ovqat hazm qilish, harakat-tayanch a'zolari, asab tizimi, ginekologik kasalliklar bilan og'rigan bemorlar uchun shifobaxsh tabiiy omillar bo'lib 2245 metr chuqurlikdan chiquvchi yod-bromli va boshqa kopgina minerallarga boy bo'lgan termal ma'danli suvlar ichish va vannalar berish uchun qollaniladi. Turli xil terapevtik va nevrologik kasalliklar bilan og'rigan bemorlarning sog'ligini tiklash va reabilitatsiya o'tkaziladi.",
+            "p_about_text_4": "Zamolnaviy tashxislash va davolash asbob-uskunalari yordamida fizioterapiya, mineral suv bilan davolash, davolash badan-tarbiyasi, uqalsh, psixoterapiya, igloterapiya, parafin va shifobaxt balchiq bilan davolash, fitobar va parhez ovqatlar sizning sog'ligingizni tiklash uchun faoliyat ko'rsatadi.",
+            "info_name_1": "Manzil",
+            "info_name_2": "Telefonlar",
+            "info_name_3": "Ish vaqti",
+            "address_L1": "Namangan violoyati, Uchqo'rgon tumani",
+            "address_L2": "Yangiyer qishlog'i, Yog'du mahallasi, 1-uy",
+            "time_days": "Dushanba - Juma",
+            "time_hours": "9:00 dan 17:00 gacha"
+        },
+        "features": {
+            "title":"Davolanish",
+            "subtitle":"Sihatgohimizda quyidagi kasalliklar bo'yicha yuqori sifatli kompleks davolash hizmatlari taklif qilinadi",
+            "feature_1": {
+                "h3": "Tayanch-harakat a'zolari kasalliklari",
+                "p": "Artrit, poliartrit, osteoartrit, osteohandroz, spondiloartroz, revmatoid artrit, umurtqalararo disk churrasi"
+            },
+            "feature_2": {
+                "h3": "Asab (markaziy va perifik) tizimi kasalliklari",
+                "p": "Nevrasteniya, lyumbalgiya, lyumboishialgiya, nevrit, polinevrit"
+            },
+            "feature_3": {             
+                "h3": "Ozqat hazm qilish a'zolari kasalliklari",
+                "p": "Surunkali oshqozon va ichak yalliglanishi (gastrit, kolit) remissiya davri, suruknali oshqozon va 12 barmoqli ichak yara kasalliklarining remissiya davri, surunkali gepatit, holiesistit"
+            },
+            "feature_4": {
+                "h3": "Ginekologik kasalliklar",
+                "p": "Ginekologik a'zolar yalliglanishi kasalliklari, eroziyalar"
+            },
+            "feature_5": {
+                "h3": "Andrologik kasalliklar",
+                "p": "Prostata bezi kasalliklari va jinsiy quvvatsizlik"
+            },
+            "feature_6": {
+                "h3": "Yurak-qon tomir kasalliklari",
+                "p": "Gipertoniya kasalliklari (1-2-bosqichi), yurak ishemik kasalliklari (asoratlarsiz)"
+            },
+            "feature_7": {
+                "h3": "Endokrinologik kasalliklar",
+                "p": "Qandli diabet (yengil va o'rta darajadagi), qalqonsimon bez kasalliklari"
+            },
+            "feature_8": {
+                "h3": "Buyrak va siydik yo'li kasalliklari",
+                "p": "Surunkali pielonefrit, uretrit"
+            }
+        },
+        "gallery": {
+            "title": "Foto gallereya",
+            "subtitle": "Sihatgohimizdan fotolavxalar",
+            "alt_text": "«Nihol» salomatlik sihatgohi"
+        },
+        "contact": {
+            "title": "Biz bilan bog'laning!",
+            "subtitle": "Murojat, taklif va fikrlar uchun",
+            "input_name": "Ism va familiyangiz",
+            "input_tel": "Telefon raqamingiz",
+            "input_text": "Murojat matni",
+            "submit": "Yuborish",
+            "success": "Murojatingiz yuborildi!"
+        }
+    },
+    "ru": {
+        "navigation": {
+            "logo_alt": "Санаторий \"Нихол\"",
+            "link_1": "О санатории",
+            "link_2": "Лечение",
+            "link_3": "Фото-галлерея",
+            "link_4": "Связаться с нами",
+            "changeLangTo": "O'zbekcha"
+        },
+        "hero": {
+            "h1_leading": "Санаторий \"Нихол\" - залог вашего здоровья!",        
+            "p_sub": "Оздоровительный cанаторий \"Нихол\" - жемчужина Ферганской долины, расположенная в городе Учкурган.",
+            "li_offer_item_1": "Чистый воздух",
+            "li_offer_item_2": "гостеприимный персонал",
+            "li_offer_item_3": "качественное обслуживание",
+            "li_offer_item_4": "вкусные диетические блюда",
+            "li_offer_item_5": "приятный отдых",
+            "li_offer_item_6": "лечебная минеральная вода бьюшаяся из недр земли глубиной 2250 метров",
+            "p_sub_2": "всё это в санаторий \"Нихол\"!",
+            "cta_primary": "Узнать больше",
+            "cta_secondary": "Связаться с нами"
+        },
+        "about": {
+            "title":"О санатории",
+            "subtitle": "“Нихол” – это оснащенный лабораторным и лечебно-диагностическим оборудованием санаторий европейского типа, находящийся в природной зоне богатой лечебными факторами.",
+            "p_about_text_1": "Оздоровительный санаторий «Нихол» расположенный в 40 км от Намангана в городе Учкурган в Узбекистане, в долине реки Нарын, истоки которой берут начало с Тянь-Шаньских гор и Большого Ферганского канала, отлично подходит для оздоровительной и реабилитационной терапии и как курорт для семейного отдыха.",
+            "p_about_text_2": "На территории санатория находится термальный источник, вытекающий из глубины более 2245 метров, обогащенные йодо-бромом и другими полезными для организма человека микроэлементами, минеральные воды которого, используются для лечебных ванн, грязевых аппликаций и гальвано-грязевых процедур.",
+            "p_about_text_3": "Природные факторы благополучно дейсвуют для пациентов с нарушениями нервной системы, сердечно-сосудистыми, пищеварительными и гинекологическими заболеваниями.",
+            "p_about_text_4": "Помимо лечебных процедур природного характера здесь широко используются современные методы физиотерапии, психотерапии, фитотерапии, диетотерапии, иглоукалывания, ЛФК и массажа, а также проводится реабилитация больных, перенесших различные терапевтические и неврологические заболевания.",
+            "info_name_1": "Адрес",
+            "info_name_2": "Телефоны для справок",
+            "info_name_3": "Время работы",
+            "address_L1": " Наманганская область, Учкурганский р-н,",
+            "address_L2": "посёлок Янгиер, улица Ёгду, дом но. 1",
+            "time_days": "Понедельник - Пятница",
+            "time_hours": "от 9:00 до 17:00"
+        },
+        "features": {
+            "title":"Лечение",
+            "subtitle":"Все лечебно-профилактические процедуры, проводимые в санатории, нацелены на лечение и профилактику:",
+            "feature_1": {
+                "h3": "Заболеваний органов опорно-двигательной системы",
+                "p": "Артрит, полиартрит, остеоартроз, остеохандроз, спондилоартроз, ревматоидный артрит, грыжа позвоночника"
+            },
+            "feature_2": {
+                "h3": "Заболеваний нервной системы",
+                "p": "Неврастения, лемнгалгия, люмбохиалгия, невриты, полиневриты"
+            },
+            "feature_3": {
+                "h3": "Заболеваний органов пищеварения",
+                "p": "Хроническое воспаление желудка и кишечника (гастрит, колит), желудочная недостаточность и ремиссии двенадцатиперстной кишки, хронический гепатит, холизистит"
+            },
+            "feature_4": {
+                "h3": "Гинекологических заболеваний",
+                "p": "Заболевания гинекологических органов, эрозия"
+            },
+            "feature_5": {
+                "h3": "Андрологических заболеваний",
+                "p": "Заболевания предстательной железы и половая дисфункция"
+            },
+            "feature_6": {
+                "h3": "Заболеваний сердечно-сосудистой системы",
+                "p": "Гипертония (фаза 1, фаза 2), ишемическая болезнь сердца (без осложнений)"
+            },
+            "feature_7": {
+                "h3": "Заболеваний эндокринной системы",
+                "p": "Сахарный диабет (легкий и умеренный), заболевания щитовидной железы"
+            },
+            "feature_8": {
+                "h3": "Заболеваний почек и мочевыводящих путей",
+                "p": "хронический пиелонефрит, уретрит"
+            }
+        },
+        "gallery": {
+            "title": "Фото-галлерея",
+            "subtitle": "Несколько фотографий с нашего санатория",
+            "alt_text": "Оздоровительный санаторий «Нихол»"
+        },
+        "contact": {
+            "title": "Связаться с нами",
+            "subtitle": "Мы всегда рады получить отклики, предложения, замечания и другую информацию от вас",
+            "input_name": "Имя и фамилия",
+            "input_tel": "Номер телефона",
+            "input_text": "Текст заявки",
+            "submit": "Отправить",
+            "success": "Ваше сообщение оправлено!"
+        }
+    }
+}

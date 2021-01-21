@@ -1,4 +1,5 @@
 import React from 'react'
+import { useLocale } from '../contexts/LocaleContext'
 
 import Section from './Section';
 import Image from './Image';
@@ -47,18 +48,21 @@ import photo_11 from '../images/large/nihol-11.webp'
 import photo_12 from '../images/large/nihol-12.webp'
 
 const Gallery = () => {
+    const { locale, Translation} = useLocale()
+    const { gallery } = Translation[locale]
+
     const largeArray = [photo_1, photo_2, photo_3, photo_4, photo_5, photo_6, photo_7, photo_8, photo_9, photo_10, photo_11, photo_12]
     const mediumArray = [photo_1_m, photo_2_m, photo_3_m, photo_4_m, photo_5_m, photo_6_m, photo_7_m, photo_8_m, photo_9_m, photo_10_m, photo_11_m, photo_12_m]
     const smallArray = [photo_1_s, photo_2_s, photo_3_s, photo_4_s, photo_5_s, photo_6_s, photo_7_s, photo_8_s, photo_9_s, photo_10_s, photo_11_s, photo_12_s]
 
 
     return (
-        <Section id="gallery" className="gallery" title="Foto gallereya" subtitle="Sihatgohimizdan fotolavxalar">
+        <Section id="gallery" className="gallery" title={gallery.title} subtitle={gallery.subtitle}>
             {
                 largeArray.map((image, index) => {
                     return (
                         <div className="image-wrap" key={image.substring(image.length - 10)}>
-                            <Image small={smallArray[index]} medium={mediumArray[index]} large={image}/>
+                            <Image small={smallArray[index]} medium={mediumArray[index]} large={image} alt={gallery.alt_text}/>
                         </div>
                     )
                 })

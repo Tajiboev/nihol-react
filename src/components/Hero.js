@@ -1,4 +1,5 @@
 import React from 'react'
+import { useLocale } from '../contexts/LocaleContext'
 import '../sass/hero.sass'
 
 import Video from './Video'
@@ -8,24 +9,27 @@ import promo from '../video/promo.webm';
 import poster from '../images/medium/nihol-2-m.webp';
 
 const Hero = () => {
+    const { locale, Translation} = useLocale()
+    const { hero } = Translation[locale]
+
 
     return (
         <Section className="hero">
             <div className="hero-left">
-                <h1 className="leading-text">Nihol salomatlik sihatgohi - sog'lom hayot makoni!</h1>
-                <p className="sub-text">"Nihol" salomatlik sihatgohi Uchqorgon tumanining baxavo hududida joylashgan, vodiyning haqiqiy marvarid maskanidir.</p>
+                <h1 className="leading-text">{hero.h1_leading}</h1>
+                <p className="sub-text">{hero.p_sub}</p>
                 <ul className="offer-list">
-                    <li className="offer-item">So'lim tabiyat</li>
-                    <li className="offer-item">xush muomila hodimlar</li>
-                    <li className="offer-item">sifatli hizmat</li>
-                    <li className="offer-item">totli taomlar</li>
-                    <li className="offer-item">maroqli hordiq</li>
-                    <li className="offer-item">2250 metr qaridanotilib chiquvchi shifobaxsh madanli suv</li>
+                    <li className="offer-item">{hero.li_offer_item_1}</li>
+                    <li className="offer-item">{hero.li_offer_item_2}</li>
+                    <li className="offer-item">{hero.li_offer_item_3}</li>
+                    <li className="offer-item">{hero.li_offer_item_4}</li>
+                    <li className="offer-item">{hero.li_offer_item_5}</li>
+                    <li className="offer-item">{hero.li_offer_item_6}</li>
                 </ul>
-                <p className="sub-text">Bularning bari "Nihol" salomatlik sihatgohida.</p>
+                <p className="sub-text">{hero.p_sub_2}</p>
                 <div className="cta">
-                    <Button variant="primary" scrollto='about'>Batafsil ma'lumot</Button>
-                    <Button variant="secondary" scrollto='contact'>Aloqa</Button>
+                    <Button variant="primary" scrollto='about'>{hero.cta_primary}</Button>
+                    <Button variant="secondary" scrollto='contact'>{hero.cta_secondary}</Button>
                 </div>
             </div>
             <div className="hero-right">

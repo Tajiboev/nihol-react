@@ -1,4 +1,5 @@
 import React from 'react'
+import { useLocale } from '../contexts/LocaleContext'
 
 import '../sass/features.sass'
 import Section from './Section';
@@ -16,64 +17,66 @@ import blood from '../images/icons/noun_normal_blood.svg'
 
 
 const Features = () => {
+    const { locale, Translation} = useLocale()
+    const { features } = Translation[locale]
     return (
-        <Section id="features" className="features" title="Davolanish" subtitle="Sihatgohimizda quyidagi kasalliklar bo'yicha yuqori sifatli kompleks davolash hizmatlari taklif qilinadi">
+        <Section id="features" className="features" title={features.title} subtitle={features.subtitle}>
             <div className="feature-grid">
                 <div className="feature">
                     <div className="icon-wrap">
                         <Icon source={spinal_pain} name={'Pain'} />
                     </div>
-                    <h3 className='feature-title'>Tayanch-harakat a'zolari kasalliklari</h3>
-                    <p className='feature-text'>Artrit, poliartrit, osteoartrit, osteohandroz, spondiloartroz, revmatoid artrit, umurtqalararo disk churrasi</p>
+                    <h3 className='feature-title'>{features.feature_1.h3}</h3>
+                    <p className='feature-text'>{features.feature_1.p}</p>
                 </div>
                 <div className="feature">
                     <div className="icon-wrap">
                         <Icon source={migraine} name={'Depression'} />
                     </div>
-                    <h3 className='feature-title'>Asab (markaziy va perifik) tizimi kasalliklari</h3>
-                    <p className='feature-text'>Nevrasteniya, lyumbalgiya, lyumboishialgiya, nevrit, polinevrit.</p>
+                    <h3 className='feature-title'>{features.feature_2.h3}</h3>
+                    <p className='feature-text'>{features.feature_2.p}</p>
                 </div>
                 <div className="feature">
                     <div className="icon-wrap">
                         <Icon source={abdominal_pain} name={'Abdominal Pain'} />
                     </div>
-                    <h3 className='feature-title'>Ozqat hazm qilish a'zolari kasalliklari</h3>
-                    <p className='feature-text'>Surunkali oshqozon va ichak yalliglanishi (gastrit, kolit) remissiya davri, suruknali oshqozon va 12 barmoqli ichak yara kasalliklarining remissiya davri, surunkali gepatit, holiesistit.</p>
+                    <h3 className='feature-title'>{features.feature_3.h3}</h3>
+                    <p className='feature-text'>{features.feature_3.p}</p>
                 </div>
                 <div className="feature">
                     <div className="icon-wrap">
                         <Icon source={woman} name={'Women'} />
                     </div>
-                    <h3 className='feature-title'>Ginekologik kasalliklar</h3>
-                    <p className='feature-text'>Ginekologik a'zolar yalliglanishi kasalliklari, eroziyalar.</p>
+                    <h3 className='feature-title'>{features.feature_4.h3}</h3>
+                    <p className='feature-text'>{features.feature_4.p}</p>
                 </div>
                 <div className="feature">
                     <div className="icon-wrap">
                         <Icon source={man} name={'Men'} />
                     </div>
-                    <h3 className='feature-title'>Andrologik kasalliklar</h3>
-                    <p className='feature-text'>Prostata bezi kasalliklari va jinsiy quvvatsizlik</p>
+                    <h3 className='feature-title'>{features.feature_5.h3}</h3>
+                    <p className='feature-text'>{features.feature_5.p}</p>
                 </div>
                 <div className="feature">
                     <div className="icon-wrap">
                         <Icon source={heart} name={'Heart'} />
                     </div>
-                    <h3 className='feature-title'>Yurak-qon tomir kasalliklari</h3>
-                    <p className='feature-text'>Gipertoniya kasalliklari (1-2-bosqichi), yurak ishemik kasalliklari (asoratlarsiz)</p>
+                    <h3 className='feature-title'>{features.feature_6.h3}</h3>
+                    <p className='feature-text'>{features.feature_6.p}</p>
                 </div>
                 <div className="feature">
                     <div className="icon-wrap">
                         <Icon source={blood} name={'Diabetes'} />
                     </div>
-                    <h3 className='feature-title'>Endokrinologik kasalliklar</h3>
-                    <p className='feature-text'>Qandli diabet (yengil va o'rta darajadagi), qalqonsimon bez kasalliklari</p>
+                    <h3 className='feature-title'>{features.feature_7.h3}</h3>
+                    <p className='feature-text'>{features.feature_7.p}</p>
                 </div>
                 <div className="feature">
                     <div className="icon-wrap">
                         <Icon source={kidney} name={'Kidney'} />
                     </div>
-                    <h3 className='feature-title'>Buyrak va siydik yo'li kasalliklari</h3>
-                    <p className='feature-text'>Surunkali pielonefrit, uretrit.</p>
+                    <h3 className='feature-title'>{features.feature_8.h3}</h3>
+                    <p className='feature-text'>{features.feature_8.p}</p>
                 </div>
             </div>
         </Section>

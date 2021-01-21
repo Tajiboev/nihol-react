@@ -1,10 +1,11 @@
-import React, { Suspense, lazy, useState } from 'react';
+import React, { Suspense, lazy } from 'react';
 import { ToastContainer, Slide } from 'react-toastify';
-import LocaleContext from './contexts/LocaleContext'
+import { LocaleProvider } from './contexts/LocaleContext'
 
+import Header from './components/Header';
 import Hero from './components/Hero';
+import HelmetWrap from './components/HelmetWrap';
 
-const Header = lazy(()=> import('./components/Header'));
 const About = lazy(()=> import('./components/About'));
 const Features = lazy(()=> import('./components/Features'));
 const Gallery = lazy(()=> import('./components/Gallery'));
@@ -12,29 +13,27 @@ const Contact = lazy(()=> import('./components/Contact'));
 const Footer = lazy(()=> import('./components/Footer'));
 
 const App = () => {
-  const [locale, setLocale] = useState('uz')
-
   return (
     <div className="App">
-      <LocaleContext.Provider value={locale}>
-        <Suspense fallback={<p>Loading...</p>}>
+      <LocaleProvider>
+          <HelmetWrap />
           <Header />
-        </Suspense>
-      
-        <main className="main">
-            <Hero></Hero>           
-            <Suspense fallback={<p>Loading...</p>}>
-              <About />     
-              <Features /> 
-              <Gallery />
-              <Contact /> 
-            </Suspense>  
-        </main>
+        
+          <main className="main">
+              <Hero />           
+              <Suspense fallback={<p>Loading...</p>}>
+                <About />     
+                <Features /> 
+                <Gallery />
+                <Contact /> 
+              </Suspense>  
+          </main>
 
-        <Suspense fallback={<p>Loading...</p>}>
-          <Footer />
-        </Suspense> 
-      </LocaleContext.Provider>
+          <Suspense fallback={<p>Loading...</p>}>
+            <Footer />
+          </Suspense> 
+      </LocaleProvider>
+
       <ToastContainer
           position="top-center"
           autoClose={2500}

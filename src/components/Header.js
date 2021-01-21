@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useLocale } from '../contexts/LocaleContext'
 import '../sass/header.sass'
 
 import Container from './Container'
@@ -10,34 +11,40 @@ import Logo from '../images/nihol-logo-small.png'
 
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false)
-    const [locale, setLocale] = useState('uz')
+    const { locale, setLocale, Translation} = useLocale()
+    const { navigation } = Translation[locale]
+
+    const changeLocale = () => {
+        if(locale === "uz") {
+            setLocale('ru')
+        } else if(locale === "ru") {
+            setLocale('uz')
+        }
+    }
 
     return (
         <header className='header'>
             <Container>
                 <div className="navbar-wrap">
                     <div className='logo-wrap'>
-                        <img src={Logo} alt="Nihol Salomatlik Sihatgohi"/>
+                        <img src={Logo} alt={navigation.logo_alt}/>
                     </div>
                     <nav className={showMenu ? 'navigation' : 'navigation navigation-hidden'}>
                         <ul className='nav-list'>
                             <li className='nav-item'>
-                                <a href="#about" className='nav-link'>Sihatgoh haqida</a>
+                                <a href="#about" className='nav-link'>{navigation.link_1}</a>
                             </li>
                             <li className='nav-item'>
-                                <a href="#features" className='nav-link'>Davolanish</a>
+                                <a href="#features" className='nav-link'>{navigation.link_2}</a>
                             </li>
                             <li className='nav-item'>
-                                <a href="#gallery" className='nav-link'>Foto gallereya</a>
+                                <a href="#gallery" className='nav-link'>{navigation.link_3}</a>
                             </li>
                             <li className='nav-item'>
-                                <a href="#contact" className='nav-link'>Biz bilan bog'lanish</a>
+                                <a href="#contact" className='nav-link'>{navigation.link_4}</a>
                             </li>
                             <li className='nav-item'>
-                                <button className={locale === 'uz' ? 'lang-btn lang-btn-active' : 'lang-btn'}>O'zbekcha</button>
-                            </li>
-                            <li className='nav-item'>
-                                <button className={locale === 'ru' ? 'lang-btn lang-btn-active' : 'lang-btn'}>Русский</button>
+                                <button className={'lang-btn'} onClick={changeLocale}>{navigation.changeLangTo} now {locale}</button>
                             </li>
                         </ul>
                     </nav>
