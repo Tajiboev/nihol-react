@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/sass/footer.sass"],"names":[],"mappings":"AAAA,QACI,mBAAoB,CACpB,oBAAsB,CACtB,iBAAkB,CAHtB,mBAKQ,iBAAkB","file":"6.aae611c1.chunk.css","sourcesContent":[".footer {\n    padding-top: 1.75rem;\n    padding-bottom: 0.5rem;\n    text-align: center;\n    .developer {\n        visibility: hidden; } }\n"]}

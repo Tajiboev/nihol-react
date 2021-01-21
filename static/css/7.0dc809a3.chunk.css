@@ -1,0 +1,2 @@
+.gallery{background-color:#f8f8f8}.gallery-wrap{display:grid;grid-template-columns:repeat(3,1fr);grid-gap:1rem;gap:1rem}.image-wrap{width:100%}.image-wrap img{max-width:100%}@media (max-width:992px){.gallery-wrap{grid-template-columns:repeat(2,1fr);grid-gap:1rem;gap:1rem}}@media (max-width:768px){.gallery-wrap{grid-template-columns:repeat(1,1fr);grid-gap:1rem;gap:1rem}}
+/*# sourceMappingURL=7.0dc809a3.chunk.css.map */
