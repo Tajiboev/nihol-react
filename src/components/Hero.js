@@ -6,7 +6,7 @@ import Video from './Video'
 import Button from './Button';
 import Section from './Section';
 import promo from '../video/promo.webm';
-import poster from '../images/medium/nihol-2-m.webp';
+import poster from '../images/small/nihol-2-s.webp';
 
 const Hero = () => {
     const { locale, Translation} = useLocale()
